@@ -1,0 +1,16 @@
+header, .headerTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    color: #fff;
+    padding: 20px 30px;
+    background: rgb(103,34,128);
+    background: linear-gradient(90deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
+}
+
+.headerTitle > h2{
+    margin-left: 10px;
+}
