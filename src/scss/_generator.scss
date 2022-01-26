@@ -23,7 +23,32 @@
     cursor: pointer;
 }
 
+.imgWrapper{
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    position: relative;
+
+    h1{
+        position: absolute;
+        color: #fff;
+        font-family: 'Impact', sans-serif;
+        -webkit-text-stroke: 1px black; 
+        font-size: 50px;
+    }
+}
+
+.topText{
+    top: 30px;
+    margin: auto;
+}
+
+.bottomText{
+    bottom: 40px;
+    margin: auto;
+}
+
 .memeImg{
-    width: 100vw;
-    margin-top: 20px;
+    max-width: 500px;
+    margin: 20px 0;
 }

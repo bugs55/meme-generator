@@ -11,3 +11,13 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  @font-face {
+    font-family: 'Impact';
+    src: url('../fonts/impact.eot');
+    src: url('../fonts/impact.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/impact.woff2') format('woff2'),
+         url('../fonts/impact.woff') format('woff'),
+         url('../fonts/impact.ttf')  format('truetype'),
+         url('../fonts/impact.svg#Impact') format('svg');
+}
