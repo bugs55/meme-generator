@@ -2,7 +2,7 @@
 
 You can create a meme with text
 
-[Live demo](https://pedantic-noether-fa7f27.netlify.app/)
+[Live demo](https://heuristic-mahavira-35ced2.netlify.app/)
 
 ## Available Scripts
 
