@@ -1,5 +1,4 @@
 import React from 'react'
-import memesData from '../memesData.json'
 
 export default function Generator() {
 
@@ -9,11 +8,19 @@ export default function Generator() {
         randomImage: 'http://i.imgflip.com/1bij.jpg'
     })
 
-    const [allMemeImages, setAllMemeImages] = React.useState(memesData);
+    const [allMeme, setAllMeme] = React.useState({});
+
+    React.useEffect(() => {
+        fetch('https://api.imgflip.com/get_memes')
+            .then(res => res.json())
+            .then(data => setAllMeme(data))
+
+        console.log('dane pobrane')
+    }, [])
 
     function getRandomImage(){
         let number = Math.floor(Math.random()*100);
-        let imageURL = allMemeImages.data.memes[number].url;
+        let imageURL = allMeme.data.memes[number].url;
 
         setMeme(prevMeme => {
             return {...prevMeme, randomImage: imageURL}
